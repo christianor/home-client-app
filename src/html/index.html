@@ -9,10 +9,16 @@
         cursor: default;
       }
     </style>
+    <script src="../../bower_components/angular/angular.js">
+    </script>
+    <script src="../js/browser/controller/MainController.js">
+    </script>
+    <script src="../js/browser/services/TemperatureService.js">
+    </script>
   </head>
-  <body>
-    <div>
-      aktuell {{ aktuell }} ° | gefühlt {{ gefühlt }} °| außen {{ außen }} °
+  <body ng-app="TemperatureMonitor">
+    <div ng-controller="MainController">
+      aktuell {{ aktuell }} ° | gefühlt {{ gefuehlt }} °| außen {{ aussen }} °
     </div>
   </body>
 </html>

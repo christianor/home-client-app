@@ -16,8 +16,8 @@ var rootUrl = url.getRootUrl();
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 200, height: 100});
-
+  mainWindow = new BrowserWindow({width: 300, height: 100});
+  // mainWindow.openDevTools();
   // and load the index.html of the app.
   mainWindow.loadURL(rootUrl + '/html/index.html');
 
