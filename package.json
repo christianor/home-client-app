@@ -2,13 +2,13 @@
   "name": "electron-quick-start",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "main.js",
+  "main": "src/js/main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron ./src/js/main.js",
+    "test": "mocha ./src/test/"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
+    "type": "git"
   },
   "keywords": [
     "Electron",
@@ -16,13 +16,11 @@
     "start",
     "tutorial"
   ],
-  "author": "GitHub",
+  "author": "Christian Ortiz",
   "license": "CC0-1.0",
-  "bugs": {
-    "url": "https://github.com/atom/electron-quick-start/issues"
-  },
-  "homepage": "https://github.com/atom/electron-quick-start#readme",
+  ,
   "devDependencies": {
+    "bower": "^1.7.2",
     "electron-prebuilt": "^0.36.0"
   }
 }
